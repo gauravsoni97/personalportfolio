@@ -1,0 +1,32 @@
+// colors 
+$p-col:#000a1b;
+$s-col:white;
+$para-col:#444;
+$dark-col:black;
+
+.projects{
+p{
+    text-align: center;
+}
+    .projectitems{
+        
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.226);
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 20px 0;
+            
+        }
+        p{
+            font-size: 1rem;
+            text-align: center;
+            padding:1px  50px;
+        }
+        &:hover{
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.479);
+            
+    }
+    }
+}

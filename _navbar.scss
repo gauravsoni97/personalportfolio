@@ -1,0 +1,40 @@
+
+// colors 
+$p-col:#000a1b;
+$s-col:white;
+$para-col:#444;
+$dark-col:black;
+
+
+.navbar{
+    background-color: $p-col;
+    .navbar-brand{
+        color: $s-col;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .navbar-toggler{
+        background-color: $s-col;
+
+    }
+    .dropdown-menu{
+        background-color: $p-col;
+        color: white;
+    }
+    ul{
+        li{
+            padding:0 8px;
+            transition: 0.4s all ease-in-out;
+            a{
+                color: $s-col;
+                font-size: 1rem;
+                font-weight: 500;
+                height: 100%;
+                transition: 0.4s all ease-in-out;
+            }
+            &:hover{
+                            background-color: lighten($p-col, $amount: 9);
+            }
+        }
+    }
+}

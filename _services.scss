@@ -1,0 +1,42 @@
+// colors 
+$p-col:#000a1b;
+$s-col:white;
+$para-col:#444;
+$dark-col:black;
+
+
+.services{
+    p{
+        text-align: center;
+    }
+ 
+    padding: 100px 0;
+    background-color: rgb(235, 249, 255);
+
+}
+
+
+.servicebox{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    transition: 0.4s all ease-in-out;
+    background: $s-col;
+
+    i{
+        font-size: 3rem;
+        color: $p-col;
+        margin: 40px;
+    }
+ 
+    &:hover{
+        background-color: $p-col;
+        h5,p,i{
+    
+            color: $s-col;
+        }
+
+    }
+}

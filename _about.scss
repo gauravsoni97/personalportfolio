@@ -1,0 +1,34 @@
+// colors
+$p-col: #000a1b;
+$s-col: white;
+$para-col: #444;
+$dark-col: black;
+
+.about {
+    p{
+        text-align: center;
+    }
+    .aboutimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 50%;
+            border-radius: 50%;
+            border: 4px solid rgb(114, 114, 114);
+        }
+    }
+
+    .aboutcontent{
+        
+            p{
+                text-align: justify;
+                font-size: 0.87rem;
+                color: $para-col;
+            }
+
+    }
+    span {
+        color: $p-col;
+    }
+}

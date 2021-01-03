@@ -1,0 +1,205 @@
+@import "navbar";
+@import "home";
+@import "about";
+@import "projects";
+@import "services";
+@import "contact";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+}
+
+// colors
+$p-col: #000a1b;
+$s-col: white;
+$para-col: #444;
+$dark-col: black;
+
+.sectionhead {
+    padding: 70px 0;
+}
+
+.btn {
+    background-color: $p-col;
+    color: $s-col;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    letter-spacing: 1px;
+    transition: 0.4s all ease-in-out;
+    box-shadow: 0 2px 5px #00000070;
+
+    &:hover {
+        background-color: darken($p-col, $amount: 5);
+        color: $s-col;
+        letter-spacing: 3px;
+    }
+}
+
+p {
+    text-align: justify;
+    color: $para-col;
+}
+
+.arrowbtn {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    border-radius: 50%;
+    z-index: 99999;
+
+    span {
+        color: rgb(100, 100, 100);
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .btn {
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+    .home {
+        text-align: center;
+        padding: 10%;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 0.7rem;
+            text-align: center;
+        }
+    }
+
+
+    // services ----------------------
+    
+    .servicebox {
+        padding: 15px;
+        border-radius: 10px;
+        transition: 0.4s all ease-in-out;
+        background: $s-col;
+        margin:0 60px;
+
+        i {
+            font-size: 2rem;
+            margin: 20px;
+        }
+        p{
+            padding: 0 30px;
+        }
+        &:hover {
+            background-color: $p-col;
+            h5,
+            p,
+            i {
+                color: $s-col;
+
+            }
+        }
+    }
+    
+    // services ----------------------
+
+    .about {
+        .aboutcontent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h5 {
+            padding: 0 20px;
+            text-align: center;
+        }
+        p {
+            padding: 0 40px;
+        }
+    }
+
+
+    // projects----------------------
+
+
+
+.projects{
+    p{
+        text-align: center;
+    }
+        .projectitems{
+            
+            padding: 10px;
+            margin:0 50px;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.226);
+            img{
+                width: 250px;
+                height: 250px;
+                margin: 20px 0;
+                
+            }
+            p{
+                padding: 0 50px;
+            }
+            &:hover{
+                box-shadow: 0 0px 10px rgba(0, 0, 0, 0.479);
+                
+        }
+        }
+    }
+
+
+
+
+
+    // projects----------------------
+
+
+
+    .contact {
+        .contactbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+            .contactleft {
+                margin: 40px 0;
+            }
+        }
+        
+
+        .btn {
+            padding: 10px 5px;
+            font-size: 0.8rem;
+        }
+    }
+
+    footer {
+        font-size: 0.7rem;
+        p {
+            margin-top: 20px;
+        }
+    }
+}

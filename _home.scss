@@ -1,0 +1,22 @@
+// colors
+$p-col: #000a1b;
+$s-col: white;
+$para-col: #444;
+$dark-col: black;
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.614)),
+        url("/homebg.jpg") no-repeat top center/cover;
+padding: 100px 0;
+
+
+        
+    h3,
+    h1,
+    h5,
+    p {
+        color: $s-col;
+        text-shadow: 0 10px 10px rgba(0, 0, 0, 0.548);
+    }
+
+}
